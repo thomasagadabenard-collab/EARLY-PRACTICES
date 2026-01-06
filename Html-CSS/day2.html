@@ -1,0 +1,110 @@
+<ul>
+    <li>
+        <ul> Household
+            <li>table</li>
+            <li>chairs</li>
+            <li>bags</li>
+        </ul>
+    </li>
+    <li>
+        <ol> Kitchen
+            <li>broom</li>
+            <li>plate</li>
+            <li>parker</li>
+        </ol>
+    </li>
+</ul>
+
+<dl>
+    <dt>
+        broom
+    </dt>
+    <dd>
+        my name is Thomas Agada Benard
+    </dd>
+</dl>
+<style>
+    table th tr{
+        border: 1px solid blue;
+        border-collapse: collapse;
+        border-color: blue;
+    }
+    th td{
+        background-color: aqua;
+    }
+    table caption{
+        margin: 10px 0;
+    }
+    td{
+        padding: 10px 50px;
+    }
+    fieldset{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        width: 30%;
+    }
+
+    fieldset input{
+        width: 90%;
+        padding: 5px 20px;
+    }
+</style>
+<table>
+    <caption>SALES</caption>
+    <thead>
+        <tr>
+            <th>s/n</th>
+            <th>date</th>
+            <th>item sold</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>09-09-2025</td>
+            <td>match-sticks</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>10-09-2025</td>
+            <td>broomsticks</td>
+        </tr>
+    </tbody>
+
+</table>
+
+<!-- 1. Using for/id -->
+<label for="email">Email</label>
+<input id="email" name="email" type="email">
+
+<!-- 2. Wrapping the input -->
+<label>Email <input name="email" type="email"></label>
+
+<fieldset>
+    <legend>Payments</legend>
+    <input type="name" placeholder="username">
+    <input type="email" placeholder="email">
+    <input type="password" placeholder="password" required maxlength="4">
+    <button>Submit</button>
+</fieldset>
+
+<select name="country">
+  <option value="">Choose country</option>
+  <optgroup label="Africa">
+    <option value="ng">Nigeria</option>
+    <option value="gh">Ghana</option>
+    <option value="ky">Kenya</option>
+  </optgroup>
+  <optgroup label="North America">
+    <option value="USA">America</option>
+    <option value="Mx">Mexico</option>
+    <option value="Ar">Argentina</option>
+  </optgroup>
+</select>
+ <figure>
+        <img src="hero.jpg" alt="Random scenic image" style="width:30%">
+        <figcaption>Decorative example image</figcaption>
+    </figure>

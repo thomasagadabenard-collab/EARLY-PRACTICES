@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube Clone Practice</title>
+    <style>
+        .head{
+            background-color: rgb(136, 85, 170);
+            height: 80px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            line-height: 0px;
+            
+        }
+        .logo{
+            background-color: rgb(136, 85, 170);
+            margin-left: 15px;
+            color: white;
+            font-weight: bold;
+            
+        }
+        .search-bar{
+            background-color: blueviolet;
+            border-color: rgb(253, 253, 253);
+        }
+        .profile{
+            margin-right: 15px;
+        }
+        .inp{
+            width: 700px;
+            height: 30px;
+            border-radius: 15px;
+            border: hidden;
+            cursor: pointer;
+        }
+        .download{
+            background-color: rgb(136, 85, 170);
+            border: ridge;
+            border-color: white;
+            height: 40px;
+            width: 130px;
+            color: white;
+            border-width: 1px;
+            cursor: pointer;
+        }
+        .download:hover{
+            opacity: 0.4;
+            border-color: rgb(136, 85, 170);
+            background-color: white;
+            color: rgb(136, 85, 170);
+        }
+        .inp::placeholder{
+            padding-left: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="head">
+        <div class="logo">Home</div>
+        <div class="search-bar"> 
+            <input class="inp" type="text" placeholder="search">
+        </div>
+        <div class="profile"><button class="download">Download</button></div>
+    </div>
+</body>
+</html>

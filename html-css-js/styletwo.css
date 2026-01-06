@@ -1,0 +1,61 @@
+.card-image-container{
+    width: 100px;
+    border-radius: 50%;
+    background: gray;
+    margin: 15px;
+}
+
+.card-image{
+    width: 100%;
+    border-radius: 50%;
+    
+    
+}
+
+.card-container{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 50px;
+    
+}
+
+.card-container-one{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 50px; 
+    
+}
+
+.card-container-one >*{
+    background: purple;
+}
+
+.card-container-two{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 50px;
+}
+
+.card-container-two >*{
+    background: orangered;
+}
+
+.card-one{
+    background: purple;
+    padding: 15px;
+}
+
+.card-two{
+    background: gray;
+    padding: 15px;
+}
+
+.card-three{
+    background: orange;
+    padding: 15px;
+}
+
+.card-four{
+    background: blue;
+    padding: 15px;
+}

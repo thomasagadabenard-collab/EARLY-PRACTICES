@@ -1,0 +1,163 @@
+    
+        *{
+            text-decoration: none;
+            list-style-type: none;
+        }
+        .head{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            justify-content: space-evenly;            
+            align-items: center;
+            align-content: center;
+            background-color: #f4e3b2;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            padding-top: 5px;
+            padding-left: 20px;
+            
+        }
+        .book-logo{
+            display: flex;
+            gap: 10px;
+        }
+        .search-button{
+            height: 30px;
+            width: 40;
+            color: white;
+            background-color: black;
+            border: groove;
+            cursor: pointer;
+        }
+
+        .search-button:hover{
+            opacity: 0.5;
+        }
+
+        .search-button:active{
+            opacity: 0.3;
+        }
+
+        .categories{
+            display: flex;
+            flex-direction: row;
+            text-decoration: none;
+            justify-content: space-between;
+            background-color: #f4e3b2;
+            padding-top: 10px;
+            padding-left: 50px;
+            padding-right: 50px;
+            text-decoration: none;
+        }
+        .categories .lists ul li a:link, .categories .lists ul li a:visited{
+            color: black;
+            text-align: center;
+            margin-right: 30px;
+            font-size: 18px;
+            font-family: sans-serif;
+            line-height: 25px;
+        }
+
+         .categories .lists ul li a:hover{
+            color: black;
+            border-bottom: blue 4px;
+            text-align: center;
+            margin-right: 30px;
+            font-size: 18px;
+            font-family: sans-serif;
+        }
+
+        .phone{
+            display: flex;
+            justify-content: space-evenly;
+            text-align: center;
+            margin-top: none;
+            
+        }
+        .shop{
+            display: flex;
+            justify-content: space-evenly;
+            text-align: center;
+            margin-top: none;
+           
+        }
+        .truck{
+            display: flex;
+            justify-content: space-evenly;
+            text-align: center;
+            margin-top: none;
+            
+            
+        }
+        .searchbar{
+            display: flex;
+            gap: 10px;
+            text-align: center;
+            justify-content: center;
+
+        }
+        .search-button{
+            border-radius: 10px;
+            height: 33px; 
+            border: ridge;
+            
+        }
+
+        .head-icons{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            margin-left: 70px;
+            
+        }
+
+        .lists{
+            background-color: aliceblue;
+            border: groove;
+            padding-left: 5px;
+            flex: 1;
+            text-align: center;
+
+        }
+
+        .icons-left{
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr;
+            background-color: aliceblue;
+            border: groove;
+            padding-left: 5px;
+            text-align: center;
+            padding-top: 20px;
+
+        }
+
+        .pict{
+            border: groove;
+            height: 100%;
+            flex: 1;
+        }
+        .bestsellers{
+            text-align: center;
+            background-color: black;
+            border: ridge;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            color: white;
+            cursor: pointer;
+
+        }
+         .bestsellers:hover{
+            text-align: center;
+            background-color: rgb(255, 254, 254);
+            color: black;
+            border: ridge;
+            justify-content: center;
+            width: 100%;
+            cursor: pointer;
+
+        }
+        .p-icons{
+            vertical-align: text-top;
+        }
+       
+
+        
+    

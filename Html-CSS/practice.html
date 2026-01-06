@@ -1,0 +1,348 @@
+<style>
+
+    *{
+        text-align: center;
+    }
+
+    .apply-button{
+        background-color: #1675f1;
+        color: white;
+        height: 50px;
+        width: 300px;
+        border-radius: 25px;
+        cursor: pointer;
+        border-width: 0px;
+        transition: 0.2s;
+        margin-right: 10px;
+        }
+
+    .save-button{
+        background-color: #ffffff;
+        color: rgb(29, 160, 221);
+        height: 50px;
+        width: 100;
+        border-radius: 25px;
+        cursor: pointer;
+        border-color: #1675f1;
+        border-width: 1px;
+        transition: 0,2s;
+    }
+
+    .apply-button:hover{
+        opacity: 0.8;
+    }
+
+    .save-button:hover{
+        opacity: 0.8;
+    }
+
+    .apply-button:active{
+
+        opacity: 0.4;
+
+    }
+
+    .save-button:active{
+
+        opacity: o,4;
+    }
+
+    
+    
+    .inpt{
+        width: 400px;
+        height: 40px;
+        border: groove;
+        border-width: auto;
+        border-radius: 5px;
+    }
+    .agree{
+        background-color: #1675f1;
+        color: white;
+        height: 50px;
+        width: 400px;
+        border-radius: 25px;
+        cursor: pointer;
+        border-width: 0px;
+        transition: 0.2s;
+        margin-right: 10px;
+    }
+
+    .click{
+        text-align: left;
+        color: rgb(99, 96, 96);
+    }
+    .join-button{
+        width: 500px;
+        justify-items: left;
+        border: groove;
+        display: block;
+        text-align: left;
+        padding-left: 30px;
+        padding-bottom: 30px;
+        
+    }
+    .email{
+        
+        color: rgb(99, 96, 96);
+        
+        
+    }
+
+    .nv{
+        width: 300px;
+    }
+
+    .uber{
+        display: block;
+        text-align: left;
+        justify-items: left;
+        border: solid;
+        border-color: #1675f1;
+        padding-left: 30px;
+        padding-bottom: 20px;
+        width: 500px;
+
+    }
+    .pickup{
+        display: block;
+        margin-bottom: 20px;
+        width: 350px;
+        height: 50px;
+        border: groove;
+
+    }
+    .destination{
+        display: block;
+        margin-bottom: 20px;
+        width: 350px;
+        height: 50px;
+        border: groove;
+
+    }
+    .request{
+        color: white;
+        background-color: black;
+        width: 150px;
+        height: 40px;
+        border: groove;
+        
+
+    }
+    .schedule{
+        color: rgb(14, 0, 0);
+        background-color: rgb(255, 254, 254);
+        width: 150px;
+        height: 40px;
+        border: groove;
+        place-items: left;
+        
+
+    }
+    .ride{
+        font-size: 40;
+    }
+
+
+
+
+</style>
+
+<button class = "apply-button">Apply on company website</button>
+
+<button class = "save-button">Save</button>
+
+<br><br>
+
+<section class="join-button">
+    <p class="email">Email</p></div>
+    <input class="inpt" type="text">
+    <p class="click">By clicking agree and join, you agree to the privacy policy.</p>
+    <button class="agree">Agree and Join</button>
+</section>
+
+<br>
+
+<section class="uber">
+    <H2 class="ride">Request a ride now</H2>
+    <input type="text" placeholder="Enter pickup location" class="pickup">
+    <input type="text" placeholder="Enter destination" class="destination">
+    <div>
+        <button class="request">Request now</button>
+    <button class="schedule">Schedule for later</button>
+    </div>
+    
+</section>
+
+<script>
+    const button = document.querySelector(".request");
+    button.addEventListener("click", () => button.innerHTML = "Button Clicked");
+    button.addEventListener("click", () => button.style.color = "white");
+
+    /*
+    Simple Calculator
+    Create a calculator that can add, subtract, multiply, and divide two numbers entered by the user.
+
+    num1 = parseInt(prompt("Enter a number. "));
+    operator = prompt("Enter a symbol to choose an operation. ");
+    num2 = parseInt(prompt("Enter a second number. "));
+
+    if (operator == "+") {
+        console.log(num1 + num2);
+    }
+    else if (operator == "-") {
+        console.log(num1 - num2);
+    }
+    else if (operator == "/") {
+        if (num2 != 0){
+            console.log(num1 / num2);
+        }
+        else {console.log("Number can not be divided by zero");}
+    }
+    else if (operator == "*"){
+        console.log(num1 * num2)
+    }
+    else{
+        console.log("Invalid operation!")
+    }
+    */
+
+
+    /*
+    Palindrome Checker
+
+    Write a program that checks if a given string (like "racecar" or "madam") reads the same forward and backward.
+
+    let word = prompt("Provide a word you want to check if it's  a palindrome. ");
+
+    word = word.toLowerCase();
+
+    console.log(word);
+
+    let arrWord = word.split("");
+
+    console.log(arrWord);
+
+    arrWordRev = arrWord.reverse();
+
+    console.log(arrWordRev);
+
+    arrWordString = arrWordRev.join("");
+
+    console.log(arrWordString)
+
+    if (arrWordString == word){
+
+        console.log("It is a palindrome")
+
+    }
+    else{
+        console.log("It is not a palindrome.")
+    }
+    */
+
+    /*Number Guessing Game
+
+    secretNumber = Math.floor(Math.random() * 10) + 1;
+
+    i = 0
+
+    let guess;
+
+    while (i < 4){
+        guess = parseInt(prompt("Guess a number between 1 and 10. "))
+
+        if (guess == secretNumber){
+            console.log("Correct! You guessed it!")
+            break
+        }
+        else if (guess > secretNumber){
+            console.log("Too high")
+        }
+        else if (guess < secretNumber){
+            console.log("Too low")
+        }
+        i++
+    }
+    if (guess == secretNumber){
+        console.log("Good job")
+    }
+    else{
+        console.log("Game over, try again some other time.")
+    }
+    */
+
+    /*To-Do List
+
+    let tasks = [];
+    
+    while(true){
+        let action = prompt("Select an action: Add, Remove, View or Exit.");
+
+        action = action.toLowerCase()
+
+        if (action === "exit") {
+            console.log("closing application.")
+            break;
+        }
+
+        else if (action === 'add'){
+            rep = prompt("What do you want to add? ")
+            tasks.push(rep)
+            console.log(tasks);
+        }
+        else if (action === "remove") {
+        let rep = prompt("What do you want to remove? ");
+        let index = tasks.indexOf(rep);
+
+        if (index !== -1) {
+            tasks.splice(index, 1);  // remove 1 item at that index
+            console.log(`"${rep}" removed from the list.`);
+        } else {
+            console.log("Task not found!");
+        }
+
+        console.log(tasks);
+        }
+        else if (action === "view"){
+            console.log(tasks);
+        }
+    };
+    */
+
+    /*Word counter*/
+
+    let wordCount = prompt("Enter a sentence. ");
+
+    wordCount = wordCount.trim();
+
+    word = wordCount.split(/\s+/);
+
+    console.log(word.length);
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+/*
+    function calculator (a,b) {
+        add = a + b;
+        sub = a - b;
+        div = a/b;
+        mult = a * b;
+        return add, sub, div, mult
+    }
+    console.log(calculator(2, 4))
+*/
+</script>
+
+

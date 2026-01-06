@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEX</title>
+    <style>
+        nav ul {
+            list-style: none;
+            text-align: center;
+            font-size: 1rem;
+        }
+        nav ul li{
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+        nav ul li a, nav ul li a:visited{
+            text-decoration: none;
+            color: white;
+            border: solid, 2px, gray;
+            padding: 3px 10px;
+            border-radius: 5px;
+        }
+        nav ul li a:hover, nav ul li a:visited:hover{
+            color: black;
+            background-color: white;
+            border: black;
+        }
+
+        header{
+            background-color: purple;
+            padding: 8px;
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        @media (min-width: 768px)  {
+
+            nav ul {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                align-items: center;
+                font-size: 1.2rem;
+            }
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        form label {
+            width: 80%;
+        }
+        
+        form button{
+            width: 50%;
+            text-align: center;
+            margin-top: 6px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <form action="post" class="form">
+                <label for="username">username*</label>
+                <input type="text">
+                <label for="password">Password*</label>
+                <input type="password">
+                <button>Submit</button>
+            </form>
+        </section>
+        <section></section>
+    </main>
+    
+</body>
+</html>

@@ -1,0 +1,326 @@
+.counter{
+    width:600px;
+    background: gray;
+    box-shadow: 8px 15px 15px rgba(0, 0, 0,0.5);
+    height: 80vh;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+
+.counter-input{
+    width: 550px;
+    height: 300px;
+    background: rgb(7, 20, 20);
+    margin: 30px auto;
+    color: white;
+    font-size: 4em;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.counter-btns{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    
+}
+
+.counter-btns button{
+    padding: 10px 20px;
+    background: rgb(73, 73, 141);
+    border-radius: 8px;
+    transition: all 1s ease-in-out;
+    color: white;
+    cursor: pointer;
+}
+
+.counter-btns button:hover{
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+.counter-btns button:active{
+    opacity: 0.5;
+}
+
+
+.calculator{
+    width: 350px;
+    margin: 200px auto;
+    background: rgb(50, 61, 61);
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 15px;    
+}
+
+.calculator-screen{
+    width: 250px;
+    height: 80px;
+    background: white;
+    color: black;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 2em;
+    padding-right: 10px;
+}
+
+.calculator button{
+    padding: 6px 18px;
+    border: 1px solid;
+    cursor: pointer;
+    background: cyan;
+    transition: opacity 1s ease;
+    margin-top: 10px;
+
+}
+
+.calculator button:hover{
+    opacity: 0.8;
+}
+
+.calculator button:active{
+    opacity: 0.4;
+}
+
+.numbers{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.numbers-end{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+
+.modal {
+    display: none;
+    width: 300px;
+    border: 1px solid black;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: orange;
+    padding: 50px 30px;
+    box-shadow: 8px 16px 20px rgba(0, 0, 0, 0.5);
+}
+
+.modal.show-modal {
+    display: block;
+}
+
+
+.modal-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-div-btns{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.modal-div-btns button{
+    padding: 5px 15px;
+    background: black;
+    color: white;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+}
+
+.modal-div-btns button:hover{
+    transform: translateY(-5px);
+    opacity: 0.7;
+}
+
+.modal-div-btns button:active{
+    opacity: 0.4;
+}
+
+.modal-div p{
+    font-size: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.modal-x{
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    font-size: 1.4em;
+    border: 1px black solid;
+    padding: 2px 5px;
+    cursor: pointer;
+    transition: all 1s alternate-reverse;
+}
+
+.modal-x:hover{
+    opacity: 0.8;
+    transform: scale(1.1);
+}
+.modal-x:active{
+    opacity: 0.4;
+}
+
+
+/*TABS*/
+
+.tabs{
+    margin: 80px auto;
+    display: flex;
+    padding: 20px 80px;
+    gap: 40px;
+    width: 900px;
+}
+
+.tabs-div{
+    padding: 20px 30px;
+    width: 100%;
+}
+
+.tabs-div-head{
+    font-size: 4em;
+    border-bottom: 3px red solid;
+    text-align: center;
+    background: green;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.tabs-div-head:hover{
+    opacity: 0.7;
+}
+
+.tabs-div-head:active{
+    opacity: 0.4;
+}
+
+.tabs-div-paragraph{
+    display: none;
+    font-size: 2em;
+    line-height: 1.3;
+}
+
+.tabs-div-paragraph.tab-open{
+    display: block;
+}
+
+.parag{
+    font-size: 3em;
+    color: black;
+    text-align: center;
+}
+.boddy.bdy{
+    background: blue;
+}
+.spa-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    margin: 0 auto;
+}
+
+.toggle{
+    background: green;
+    width: 80px;
+    padding: 20px 30px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+
+.form-paragraph {
+    display: none;
+}
+
+.form-paragraph.active {
+    display: block;
+}
+
+#modal-two{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 400px;
+}
+
+.modal-two{
+    display: none;
+    background: gray;
+    border: black 2px solid;
+    width: 300px;
+    height: 400px;
+}
+
+.modal-two.active{
+    display: block;
+}
+
+.modal-two-btns{
+    display: flex;
+    
+}
+
+.gallery-containerr{
+    display: flex;
+    flex-direction: row;
+    width: 900px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+.thumb{
+    width: 300px;
+    cursor: pointer;
+}
+
+.thumb.active{
+    transform: scale(1.2);
+}
+
+.image {
+    width: 300px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+
+.gallery-container{
+    display: flex;
+    flex-direction: row;
+    width: 400px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    gap: 30px;
+    transition: transform 0.3s ease;
+}
+
+.gallery{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

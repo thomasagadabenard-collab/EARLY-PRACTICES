@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Homepage</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans text-gray-800">
+
+  <!-- Header / Navbar -->
+  <header class="bg-white shadow">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-blue-600">MyBlog</h1>
+      <nav class="space-x-6 hidden md:flex" id="nav-items">
+        <a href="#" class="text-gray-700 hover:text-blue-600">Home</a>
+        <a href="#" class="text-gray-700 hover:text-blue-600">About</a>
+        <a href="#" class="text-gray-700 hover:text-blue-600">Blog</a>
+        <a href="#" class="text-gray-700 hover:text-blue-600">Contact</a>
+      </nav>
+      <button class="md:hidden p-2 border rounded" id="nav-button">☰</button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-blue-600 text-white py-16">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-4xl font-bold mb-4">Welcome to My Blog</h2>
+      <p class="text-lg mb-6">Sharing ideas, tutorials, and stories about coding and design.</p>
+      <a href="#posts" class="bg-white text-blue-600 px-6 py-3 rounded-lg font-medium hover:bg-gray-200 transition">
+        Explore Posts
+      </a>
+    </div>
+  </section>
+
+  <!-- Blog Posts Section -->
+  <section id="posts" class="container mx-auto px-6 py-12">
+    <h3 class="text-3xl font-bold mb-8 text-center">Latest Posts</h3>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      
+      <!-- Blog Card 1 -->
+      <article class="bg-white rounded-lg shadow hover:shadow-lg transition overflow-hidden">
+        <img src="https://source.unsplash.com/600x400/?technology" alt="Post 1" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h4 class="text-xl font-semibold mb-2">Getting Started with Tailwind CSS</h4>
+          <p class="text-gray-600 mb-4">Learn how to style your websites faster with utility-first classes.</p>
+          <a href="#" class="text-blue-600 hover:underline">Read More →</a>
+        </div>
+      </article>
+
+      <!-- Blog Card 2 -->
+      <article class="bg-white rounded-lg shadow hover:shadow-lg transition overflow-hidden">
+        <img src="https://source.unsplash.com/600x400/?coding" alt="Post 2" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h4 class="text-xl font-semibold mb-2">JavaScript Tips for Beginners</h4>
+          <p class="text-gray-600 mb-4">Practical tricks to make learning JavaScript easier and fun.</p>
+          <a href="#" class="text-blue-600 hover:underline">Read More →</a>
+        </div>
+      </article>
+
+      <!-- Blog Card 3 -->
+      <article class="bg-white rounded-lg shadow hover:shadow-lg transition overflow-hidden">
+        <img src="https://source.unsplash.com/600x400/?design" alt="Post 3" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h4 class="text-xl font-semibold mb-2">Web Design Best Practices</h4>
+          <p class="text-gray-600 mb-4">Improve your website designs with these essential guidelines.</p>
+          <a href="#" class="text-blue-600 hover:underline">Read More →</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-6 text-center">
+    <p>&copy; 2025 MyBlog. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const navButton = document.getElementById("nav-button");
+    const navItems = document.getElementById("nav-items");
+
+    navButton.addEventListener("click", () => {
+        navItems.classList.toggle("hidden")
+    });
+  </script>
+
+</body>
+</html>
