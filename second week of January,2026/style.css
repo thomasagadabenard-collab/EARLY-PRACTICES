@@ -23,3 +23,93 @@
     padding: 10px;
 
 }
+
+.tool-tip{
+    display: flex;
+    width: 60%;
+    margin: 30px auto;
+
+}
+
+.image-container{
+    width: 100%;
+}
+
+.image-container img{
+    width: 100%;
+}
+
+.profile-container{
+    padding: 10px 20px 10px 25px;
+    
+}
+
+
+
+.name-im img{
+    width: 20%;
+    height: 80%;
+    border-radius: 50%;
+    padding: 13px 0;
+}
+
+.name-im{
+    display: flex;
+    gap: 20px;
+}
+
+
+.right{
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    margin-top: 40px;
+}
+
+.share-container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+
+.share{
+    width: 12%;  
+    background: rgb(173, 165, 165);
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 1s ease;
+    
+}
+
+.share:hover{
+    transform: scale(1.2);
+}
+
+.share-tool-container{
+    display: none;
+    width: 200px;
+    height: 40px;
+    background: rgb(159, 178, 185);
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    position: absolute;
+    top: -40px;
+    right: -200px; 
+}
+
+.share-tool-container.active{
+    display: flex;
+}
+
+.share-tool-container img{
+    width: 15%;
+}
+
+.share-tool-container h2{
+    color: white;
+}

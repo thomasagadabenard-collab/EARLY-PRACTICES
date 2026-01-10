@@ -34,3 +34,18 @@ function whether(){
 add.addEventListener("click", () => {
     whether();    
 });
+
+
+let shareBtn = document.querySelector(".share");
+let shareTool = document.querySelector(".share-tool-container")
+
+shareBtn.addEventListener("click", (e) => {
+    e.stopPropagation();
+    shareTool.classList.toggle("active");
+
+})
+
+
+window.addEventListener("click",() => {
+    shareTool.classList.remove("active");
+})
