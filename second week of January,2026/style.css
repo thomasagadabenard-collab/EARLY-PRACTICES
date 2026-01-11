@@ -63,7 +63,7 @@
     display: flex;
     justify-content: space-between;
     padding: 1em;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 .share-container{
@@ -95,11 +95,12 @@
     height: 40px;
     background: rgb(159, 178, 185);
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 10px;
     position: absolute;
     top: -40px;
     right: -200px; 
+    border-radius: 15px;
 }
 
 .share-tool-container.active{
