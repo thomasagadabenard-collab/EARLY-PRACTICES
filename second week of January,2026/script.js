@@ -164,3 +164,32 @@ function formatCurrency(amount){
 
 console.log(formatCurrency(3000));
  
+
+class Book {
+  constructor(title, author) {
+    this.title = title;
+    this.author = author;
+    this.isAvailable = true;
+  }
+
+  BorrowBook(title){
+    let available = !this.isAvailable;
+    return available;
+  }
+
+  ReturnBook(title){
+    this.isAvailable = true;
+  }
+}
+
+class Library {
+  constructor() {
+    this.books = [];
+  }
+
+  AddBook(book){
+    this.books += this.books;
+    return this.books;
+  }
+}
+

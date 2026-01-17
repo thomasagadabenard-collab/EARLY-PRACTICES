@@ -1,0 +1,44 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.counter{
+    position: relative;
+}
+#counter{
+    padding: 10px;
+    
+}
+
+.counter-span{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.hero {
+  height: 100vh;
+  padding: 100px;
+  background: linear-gradient(to right, #667eea, #764ba2);
+  color: white;
+}
+
+.projects {
+  padding: 80px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.project {
+  padding: 40px;
+  background: #f4f4f4;
+}
