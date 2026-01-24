@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0 auto;
+}
+
+.header{
+    margin: 0 auto;
+    text-align: center;
+    border-bottom: 10px rgba(0, 0, 0, 0.5) solid;
+    padding: 10px;
+}
+
+.card{
+    width: 400px;
+    background: rgb(82, 23, 33);
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px 15px;
+    color: white;
+}
+
+.card-image{
+    width: 90%;
+}
+
+.card-text{
+    margin: 10px auto;
+}
+
+.upload{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin: 30px auto;
+}
+
+.upload >* {
+    margin-top: 8px;
+}
+
+.upload-btn{
+    padding: 5px 0;
+}
