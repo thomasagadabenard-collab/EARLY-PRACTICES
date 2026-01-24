@@ -27,6 +27,7 @@ function fnOne() {
 
     if (triesLeft === 0){
         gameInput.value = "Game over"
+        gameButton.disabled = true;
     }
 }
 
