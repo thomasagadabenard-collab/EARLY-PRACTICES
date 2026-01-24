@@ -3,6 +3,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .counter{
@@ -42,3 +43,88 @@ body {
   padding: 40px;
   background: #f4f4f4;
 }
+
+.game{
+  margin: 10vh auto;
+  background: purple;
+  width: 80%;
+  height: 50vh;
+
+}
+
+.game-div{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 25vh auto;
+  gap: 5px;
+}
+
+.game-div button{
+  background: black;
+  color: white;
+  padding: 8px 25px;
+  cursor: pointer;
+}
+
+.game-div input {
+  padding: 8px;
+  width: 50%;
+}
+
+.right-guess{
+  width: 400px;
+  height: 200px;
+  border-radius: 20px;
+  background: orange;
+  text-align: center;
+  padding: 10px;
+  position: absolute;
+  top: 35vh;
+  left: 35vw;
+  display: none;
+}
+
+.right-guess.active{
+  display: block;
+}
+
+.wrong-guess.active{
+  display: block;
+}
+
+.wrong-guess{
+  width: 400px;
+  height: 200px;
+  border-radius: 20px;
+  background: red;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+  position: absolute;
+  top: 35vh;
+  left: 35vw;
+  display: none;
+}
+
+.modal{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+.text{
+  margin-top: 100px;
+}
+
+.x{
+  position: absolute;
+  top: 2px;
+  right: 10px;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
