@@ -8,6 +8,8 @@ let wrongGuess = document.querySelector(".wrong-guess");
 
 let closeButtons = document.querySelectorAll(".x");
 
+let triesLeft = 3;
+
 let myGuess = (10 *(Math.random()) + 1);
 
 let newGuesss = Math.floor(myGuess);
@@ -20,6 +22,11 @@ function fnOne() {
         rightGuess.classList.add("active");
     } else {
         wrongGuess.classList.add("active");
+        triesLeft --;
+    }
+
+    if (triesLeft === 0){
+        gameInput.value = "Game over"
     }
 }
 
