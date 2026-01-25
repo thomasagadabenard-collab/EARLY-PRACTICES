@@ -1,4 +1,4 @@
-let entry = document.querySelector(".upload-text-area");
+/*let entry = document.querySelector(".upload-text-area");
 let uploadInput = document.querySelector(".upload-input");
 let uploadBtn = document.querySelector(".upload-btn");
 let main = document.querySelector("main");
@@ -32,7 +32,7 @@ uploadBtn.addEventListener("click", () => {
     uploadInput.value = "";
 });
 
-/*Closure*/
+//Closure
 function createCounter(){
     let count = 0;
 
@@ -48,7 +48,7 @@ newCounter();
 newCounter();
 newCounter();
 
-/*Call back function*/
+//Call back function 
 
 function processNumber(number, callBack){
     let result = number * 2;
@@ -187,11 +187,143 @@ let timer = setInterval(() => {
 fetch("https://jsonplaceholder.typicode.com/users")
   .then(res => res.json())
   .then(data => {
-    console.log(data);
-    
-      data.forEach(user => {
-          console.log(user.name, user.email);
-      });
+        console.log(data);
+        data.forEach(user => {
+            console.log(user.name, user.email);
+        });
   })
   .catch(err => console.error(err));
+
+  async function getUserData() {
+    
+  }
+
+  function fakeApi() {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve({ name: "Alex", age: 25 });
+        }, 2000);
+    });
+}
+
+async function getUserData() {
+    try {
+        const data = await fakeApi();
+        console.log(data);
+    } catch (error) {
+        console.error(error);
+    }
+}
+
+getUserData();*/
+
+const even = [];
+
+const odd = []; 
+
+function arrr(numbers){
+    for(let number of numbers){
+        if(number%2 === 0){
+            even.push(number);
+        }else {
+            odd.push(number);
+        }
+    }
+    console.log(numbers);
+    
+}
+
+arrr([1,2,3,4,5,6,7,8,9,9,10,11,21,12,24,31]);
+
+console.log(even);
+
+console.log(odd); 
+
+
+//Given an array of student objects, return only the students who passed all subjects (score ≥ 50).
+
+const students = [
+    {name:"Thomas", score: 80},
+    {name:"Alex", score: 60},
+    {name:"Alisson", score: 70},
+    {name:"Eke", score: 40},
+    {name:"Isaac", score: 30},
+    {name:"Lulu", score: 90},
+    {name:"Manny", score: 20},
+]
+
+console.log(students);
+
+console.log(students[0].score);
+
+for(let student of students){
+    if(student.score >= 50){
+        console.log(student.name);
+    }
+}
+
+let passStudents =  students.filter(student => {
+    return student.score >= 50;    
+})
+
+console.log(passStudents);
+
+/*OBJECT
+
+Task 1:
+Create an object representing a shopping cart with methods to:
+
+add item
+
+remove item
+
+calculate total price*/
+
+
+
+let shoppingCart = {
+    items: {
+        milk: 20,
+        bread: 50,
+        milo: 200,
+    },
+
+    addItems() {
+        this.items.kuli = 400;
+    },
+
+    removeItems() {
+        delete this.items.milk;
+    },
+
+    totalPrice() {
+        let total = 0;
+
+        for (let item in this.items) {
+            total += this.items[item];
+        }
+
+        return total;
+    }
+};
+
+console.log(shoppingCart.items);
+
+shoppingCart.addItems();
+console.log(shoppingCart.items);
+
+shoppingCart.removeItems();
+console.log(shoppingCart.items);
+
+console.log(shoppingCart.totalPrice());
+
+
+
+
+
+
+
+
+
+
 
