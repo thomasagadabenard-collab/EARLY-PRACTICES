@@ -112,3 +112,86 @@ let result = calculate(2,4, callBack)
 console.log(result);
 
 
+function createCount(){
+    let count = 0;
+    return {
+        increment: () => {
+            count ++
+            return count
+        },
+        decrement: () => {
+            count--
+            return count;
+        }
+    }
+}
+
+let newCount = createCount();
+
+console.log(newCount);
+
+console.log(newCount.increment());
+
+console.log(newCount.increment());
+
+console.log(newCount.increment());
+
+console.log(newCount.decrement());
+
+function loginUser(userName, callback) {
+    setTimeout(() => {
+        console.log("Logging in...");
+        const result = callback(userName);
+        console.log(result);
+    }, 2000);
+}
+
+function allBack(userName) {
+    if (!userName) {
+        return "Login failed";
+    } else {
+        return `Welcome ${userName}`;
+    }
+}
+
+loginUser("Tom", allBack);
+
+function delayedMessages(messages){
+    for(let message of messages){
+        setTimeout(() => {
+            console.log(message);
+        }, 1000);
+    }
+}
+
+
+let hey = delayedMessages(["Hello", "How are you?", "Goodbye"]);
+
+console.log(hey);
+
+let counts = 10;
+
+let timer = setInterval(() => {
+    console.log(counts);
+
+    if (counts===0){
+        console.log("time up");
+        clearInterval(timer) 
+    }
+
+    counts --;
+    
+}, 1000);
+
+
+fetch("https://jsonplaceholder.typicode.com/users")
+  .then(res => res.json())
+  .then(data => {
+    console.log(data);
+    
+      data.forEach(user => {
+          console.log(user.name, user.email);
+      });
+  })
+  .catch(err => console.error(err));
+
