@@ -317,6 +317,42 @@ console.log(shoppingCart.items);
 
 console.log(shoppingCart.totalPrice());
 
+let prices = [10,20,40,500,300,400,100,200]
+
+let vat = prices.map(price => price * 7.5/100);
+
+console.log(prices);
+
+console.log(vat);
+
+
+let users = ["thomas", "isaac", "vero", "jumoke"]
+
+let upperUser = users.map(user => user[0].toUpperCase());
+
+let newUpperUser = users.map(user => user.toUpperCase());
+
+console.log(users);
+
+console.log(newUpperUser);
+
+console.log(upperUser);
+
+
+let values = [2,3,2,4,5,6,7,5,9,9];
+
+
+
+let newSet = new Set(values);
+
+console.log(newSet);
+
+
+
+
+
+
+
 
 
 
