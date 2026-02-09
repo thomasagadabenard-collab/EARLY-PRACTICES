@@ -1,0 +1,30 @@
+.shadow{
+    width: 400px;
+    height: 400px;
+    background-color: blue;
+    box-shadow: 3px 10px 12px gray;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    gap: 10px;
+}
+
+.name-blank{
+    display: none;
+    color: red;
+}
+
+.name-blank.active{
+    display: block;
+}
+
+.email-blank{
+    display: none;
+    color: red;
+}
+.email-blank.active{
+    display: block;
+}
