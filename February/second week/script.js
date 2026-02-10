@@ -152,4 +152,52 @@ formBtn.addEventListener("click", (e) => {
     console.log("Form submitted");
 });
 
+function processNumber(number, callBack){
+    return double(number);
+
+}
+
+function double(number) {
+    return number * 2;    
+}
+
+let nummy = processNumber(4, double);
+console.log(nummy);
+
+function createCounter(){
+    let count = 0;
+
+    return function close(){
+        count ++
+        console.log(count);
+        
+    }
+}
+
+let closure = createCounter()
+
+closure()
+closure()
+closure()
+closure()
+closure()
+
+let load = "Loading..."
+
+console.log(load);
+
+setTimeout(() => {
+    load = "Data Loaded succesfully";
+    console.log(load);
+    
+}, 3000)
+
+
+fetch("https://api.open-meteo.com/v1/forecast?latitude=9.08&longitude=7.49&current_weather=true")
+  .then(res => res.json())
+  .then(data => console.log(data));
+
+
+
+
 
