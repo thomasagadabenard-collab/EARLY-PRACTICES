@@ -248,34 +248,36 @@ fetch("https://api.open-meteo.com/v1/forecast?latitude=9.08&longitude=7.49&curre
   searchGitHubUser("Bernard");
 
 
-/*async function posts(){
+async function posts(){
     
     try{
         const res = await fetch (`https://jsonplaceholder.typicode.com/posts`);
 
         if(!res.ok){
             throw new Error("No posts")
-        } else{
-            const datas = await res.json();
-            console.log(datas);
+        } 
 
-           datas.forEach(data => {
-            if(data.id >= 0 && data.id <= 10){
-                console.log(data.body);
-            }
-            const mapping = datas.map(data => {
-                console.log(data.title);
-                
-            })
-           } )
+        const datas = await res.json();
+        console.log(datas);
+
+        datas.forEach(data => {
+        if(data.id >= 0 && data.id <= 10){
+            console.log(data.body);
         }
+
+        const mapping = datas.map(data => {
+            console.log(data.title);
+            
+        })
+        } )
+
     } catch(error){
         console.error(error.message)
     }
     
   }
 
-  posts();*/
+  posts();
 
   async function posts() {
   try {
@@ -303,6 +305,28 @@ fetch("https://api.open-meteo.com/v1/forecast?latitude=9.08&longitude=7.49&curre
 
 posts();
 
+
+async function weatherCall (){
+    try{
+        const res = await fetch ( "https://api.open-meteo.com/v1/forecast?latitude=6.52&longitude=3.37&current_weather=true")
+
+        if(!res.ok){
+            throw new Error("Weather can not be found")
+        } 
+
+        const data = await res.json();
+
+        console.log(data);
+
+        console.log(data.current_weather.temperature);
+        
+        
+    } catch(error){
+        console.error(error.message)
+    }
+}
+
+weatherCall()
 
 
  
