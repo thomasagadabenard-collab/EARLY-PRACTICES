@@ -198,6 +198,119 @@ fetch("https://api.open-meteo.com/v1/forecast?latitude=9.08&longitude=7.49&curre
   .then(data => console.log(data));
 
 
+  const url = "https://jsonplaceholder.typicode.com/users";
+
+  async function placeholder(url){
+
+    console.log("Loading...");
+    
+    try{
+        const res = await fetch(url);
+        if (!res.ok){
+            throw new Error("could not fetch");            
+        } else{
+            const datas = await res.json();
+            console.log(datas);   
+            
+            datas.forEach(data => {
+                console.log(`${data.name} : ${data.email}`);
+            })             
+        }
+          
+    }
+    catch(error){
+        console.error(error.message)
+    }
+  }
+
+  placeholder(url);
+
+
+
+  async function searchGitHubUser(username){
+    
+    try{
+        const res = await fetch (`https://api.github.com/users/${username}`);
+        if(!res.ok){
+            throw new Error("User can not be found")
+        } else{
+            const data = await res.json();
+            console.log(data.name);
+            console.log(data.bio);
+            console.log(data.followers);
+        }
+    } catch(error){
+        console.error(error.message)
+    }
+    
+  }
+
+  searchGitHubUser("Bernard");
+
+
+/*async function posts(){
+    
+    try{
+        const res = await fetch (`https://jsonplaceholder.typicode.com/posts`);
+
+        if(!res.ok){
+            throw new Error("No posts")
+        } else{
+            const datas = await res.json();
+            console.log(datas);
+
+           datas.forEach(data => {
+            if(data.id >= 0 && data.id <= 10){
+                console.log(data.body);
+            }
+            const mapping = datas.map(data => {
+                console.log(data.title);
+                
+            })
+           } )
+        }
+    } catch(error){
+        console.error(error.message)
+    }
+    
+  }
+
+  posts();*/
+
+  async function posts() {
+  try {
+    const res = await fetch("https://jsonplaceholder.typicode.com/posts");
+
+    if (!res.ok) {
+      throw new Error("Could not fetch posts");
+    }
+
+    const datas = await res.json();
+
+    const firstTen = datas.slice(0, 10);
+
+
+    const titles = firstTen.map(post => post.title);
+
+    console.log(titles);
+
+    return titles;
+
+  } catch (error) {
+    console.error(error.message);
+  }
+}
+
+posts();
+
+
+
+ 
+
+
+
+
+
 
 
 
